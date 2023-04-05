@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Rust talk slides",
+      "type": "shell",
+      "command": "marp --html --theme ./rust-pourquoi-vous-devriez-vous-y-intéresser-en-2023/slides/dracula.css ./rust-pourquoi-vous-devriez-vous-y-intéresser-en-2023/slides/index.md -o ./rust-pourquoi-vous-devriez-vous-y-intéresser-en-2023/slides/index.html",
+      "presentation": {
+        "reveal": "silent",
+        "revealProblems": "always",
+        "close": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
