@@ -1,6 +1,12 @@
 # DevDay 2023 - Go with the Flow
 This repository contains all resources provided by speakers during the Edition 2023
 
+## Sponsors
+
+Thank you to our sponsors for contributing to the DevDay community.
+
+![Sponsors 2023](.attachments/sponsors.jpg)
+
 ## Speaker : How to contribute
 
 PLease find here the way to contribute to this repository : 
