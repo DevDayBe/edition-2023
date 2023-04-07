@@ -6,6 +6,7 @@ This repository contains all resources provided by speakers during the Edition 2
 - [Azure Quantum and QSharp by Johnny Hooyberghs](azure-quantum-and-qsharp/README.md)
 - [Les dessous de Docker by Philippe Vlerick](les-dessous-de-docker/README.md)
 - [Rust - Pourquoi vous devriez vous y intéresser? by Fabian Vilers](rust-pourquoi-vous-devriez-vous-y-int%C3%A9resser-en-2023/README.md)
+- [Construire une application Android grâce à Jenkins sur Chomebook, est-ce seulement possible? by Bruno Verachten 🍰](construire-une-application-android-grace-a-jenkins-sur-chomebook-est-ce-seulement-possible/README.md)
 
 ## Speaker : How to contribute
 
