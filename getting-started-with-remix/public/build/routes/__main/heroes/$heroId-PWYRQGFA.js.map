@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../app/routes/__main/heroes/$heroId.tsx"],
+  "sourcesContent": ["import type { LoaderFunction } from \"@remix-run/node\";\nimport { useLoaderData } from \"@remix-run/react\";\nimport { get } from \"~/http-client/config\";\nimport invariant from \"tiny-invariant\";\nimport type { HeroModel } from \".\";\n\nexport const loader: LoaderFunction = async ({ params }) => {\n  invariant(params.heroId, \"expected params.heroId\");\n\n  const response = await get<HeroModel>(\"heroes/\" + params.heroId);\n  return response.data;\n};\n\nexport default function HeroId() {\n  const hero = useLoaderData<HeroModel>();\n  return (\n    <div>\n      <h1>Super Heroes</h1>\n      <h2>Hero Id: {hero?.id}</h2>\n      <h2>Hero Name: {hero?.firstName}</h2>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;;;AAiBM;AAJS,SAAR,SAA0B;AAC/B,QAAM,OAAO,cAAyB;AACtC,SACE,mDAAC,SACC;AAAA,uDAAC,QAAG,4BAAJ;AAAA;AAAA;AAAA;AAAA,WAAgB;AAAA,IAChB,mDAAC,QAAG;AAAA;AAAA,MAAU,6BAAM;AAAA,SAApB;AAAA;AAAA;AAAA;AAAA,WAAuB;AAAA,IACvB,mDAAC,QAAG;AAAA;AAAA,MAAY,6BAAM;AAAA,SAAtB;AAAA;AAAA;AAAA;AAAA,WAAgC;AAAA,OAHlC;AAAA;AAAA;AAAA;AAAA,SAIA;AAEJ;",
+  "names": []
+}

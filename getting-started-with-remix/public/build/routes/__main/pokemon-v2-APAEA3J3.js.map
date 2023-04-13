@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/__main/pokemon-v2.tsx"],
+  "sourcesContent": ["import { useEffect } from \"react\";\nimport { useLoaderData } from \"@remix-run/react\";\nimport { get } from \"~/http-client/config\";\n\nexport const loader = async () => {\n  const { data } = await get(\n    \"https://pokeapi.co/api/v2/pokemon?offset=20&limit=20\"\n  );\n  return data;\n};\n\nexport default function Pokemon() {\n  const pokemon = useLoaderData();\n  // will not work if you disable JavaScript in your browser\n  useEffect(() => {\n    console.log(\"pokemon-v2:client\");\n  }, []);\n\n  return (\n    <div>\n      <h1>POKEMON</h1>\n      {pokemon &&\n        pokemon.results.map((pokemon: any) => (\n          <div key={pokemon.name}>\n            <h2>{pokemon.name}</h2>\n          </div>\n        ))}\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;;;AAAA,mBAA0B;AAoBpB;AATS,SAAR,UAA2B;AAChC,QAAM,UAAU,cAAc;AAE9B,8BAAU,MAAM;AACd,YAAQ,IAAI,mBAAmB;AAAA,EACjC,GAAG,CAAC,CAAC;AAEL,SACE,mDAAC,SACC;AAAA,uDAAC,QAAG,uBAAJ;AAAA;AAAA;AAAA;AAAA,WAAW;AAAA,IACV,WACC,QAAQ,QAAQ,IAAI,CAACA,aACnB,mDAAC,SACC,6DAAC,QAAI,UAAAA,SAAQ,QAAb;AAAA;AAAA;AAAA;AAAA,WAAkB,KADVA,SAAQ,MAAlB;AAAA;AAAA;AAAA;AAAA,WAEA,CACD;AAAA,OAPL;AAAA;AAAA;AAAA;AAAA,SAQA;AAEJ;",
+  "names": ["pokemon"]
+}
