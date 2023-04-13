@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../app/routes/__main/heroes/index.tsx"],
+  "sourcesContent": ["import { NavLink, useLoaderData } from \"@remix-run/react\";\nimport { get } from \"~/http-client/config\";\n\n// server code which does not get bundled\n// this will be converted to a server JSON data if Heroes is not present\nexport const loader = async () => {\n  console.log(\"heroes:server\");\n  const { data } = await get<HeroModel[]>(\"heroes\");\n  return data.filter((h) => h.house === \"Marvel\");\n};\n\nexport default function Heroes() {\n  const heroes = useLoaderData<typeof loader>();\n\n  return (\n    <>\n      <div>\n        <h1>Marvel Heroes</h1>\n        {heroes.map((h) => (\n          <div key={h.id}>\n            <NavLink to={h.id}>\n              <h2>\n                {h.firstName} {h.lastName}\n              </h2>\n            </NavLink>\n          </div>\n        ))}\n      </div>\n    </>\n  );\n}\n\nexport type HeroModel = {\n  id: string;\n  firstName: string;\n  lastName: string;\n  knownAs: string;\n  house: string;\n};\n"],
+  "mappings": ";;;;;;;;;;;;;AAeI;AAJW,SAAR,SAA0B;AAC/B,QAAM,SAAS,cAA6B;AAE5C,SACE,sFACE,6DAAC,SACC;AAAA,uDAAC,QAAG,6BAAJ;AAAA;AAAA;AAAA;AAAA,WAAiB;AAAA,IAChB,OAAO,IAAI,CAAC,MACX,mDAAC,SACC,6DAAC,WAAQ,IAAI,EAAE,IACb,6DAAC,QACE;AAAA,QAAE;AAAA,MAAU;AAAA,MAAE,EAAE;AAAA,SADnB;AAAA;AAAA;AAAA;AAAA,WAEA,KAHF;AAAA;AAAA;AAAA;AAAA,WAIA,KALQ,EAAE,IAAZ;AAAA;AAAA;AAAA;AAAA,WAMA,CACD;AAAA,OAVH;AAAA;AAAA;AAAA;AAAA,SAWA,KAZF;AAAA;AAAA;AAAA;AAAA,SAaA;AAEJ;",
+  "names": []
+}

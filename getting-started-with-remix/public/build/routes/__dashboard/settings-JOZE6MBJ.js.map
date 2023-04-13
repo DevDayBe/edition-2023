@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/__dashboard/settings.tsx"],
+  "sourcesContent": ["import React from \"react\";\n\nexport default function Settings() {\n  return (\n    <>\n      <h1>Settings works!</h1>\n    </>\n  );\n}\n"],
+  "mappings": ";;;;;;;;AAII;AAFW,SAAR,WAA4B;AACjC,SACE,sFACE,6DAAC,QAAG,+BAAJ;AAAA;AAAA;AAAA;AAAA,SAAmB,KADrB;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;",
+  "names": []
+}
