@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../../app/routes/__main/parent-one/parent-two/parent-three/index.jsx"],
+  "sourcesContent": ["import React from 'react'\n\nexport default function ParentThree() {\n  return (\n    <h1>3rd level here</h1>\n  )\n}\n"],
+  "mappings": ";;;;;;;;;AAAA,mBAAkB;AAId;AAFW,SAAR,cAA+B;AACpC,SACE,mDAAC,QAAG,8BAAJ;AAAA;AAAA;AAAA;AAAA,SAAkB;AAEtB;",
+  "names": []
+}

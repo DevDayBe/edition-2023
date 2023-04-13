@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/__main/index.tsx"],
+  "sourcesContent": ["import { useState } from \"react\";\n\nexport default function Home() {\n  const [count, setCount] = useState<number>(0);\n\n  return (\n    <>\n      <div className=\"flex w-screen flex-row items-center justify-center\">\n        <h1>Remix Run</h1>\n      </div>\n      <div>\n        <button className=\"btn\" onClick={() => setCount((prev) => prev + 1)}>\n          Click me\n        </button>\n        <div>\n          <p>Count: {count}</p>\n        </div>\n      </div>\n    </>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;AAAA,mBAAyB;AAMrB;AAJW,SAAR,OAAwB;AAC7B,QAAM,CAAC,OAAO,QAAQ,QAAI,uBAAiB,CAAC;AAE5C,SACE,sFACE;AAAA,uDAAC,SAAI,WAAU,sDACb,6DAAC,QAAG,yBAAJ;AAAA;AAAA;AAAA;AAAA,WAAa,KADf;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,mDAAC,SACC;AAAA,yDAAC,YAAO,WAAU,OAAM,SAAS,MAAM,SAAS,CAAC,SAAS,OAAO,CAAC,GAAG,wBAArE;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,MACA,mDAAC,SACC,6DAAC,OAAE;AAAA;AAAA,QAAQ;AAAA,WAAX;AAAA;AAAA;AAAA;AAAA,aAAiB,KADnB;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,SANF;AAAA;AAAA;AAAA;AAAA,WAOA;AAAA,OAXF;AAAA;AAAA;AAAA;AAAA,SAYA;AAEJ;",
+  "names": []
+}
