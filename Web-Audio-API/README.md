@@ -8,9 +8,11 @@
 
 - Vous trouverez les slides de la présentation dans le fichier [Web Audio APIDevDay.pptx](./slides)
 
-- Les source codes (en JavaScript) sont disponibles sur [Demo](./demo)
+- Les source codes (en JavaScript) sont disponibles dans [demo](./demo/).
 
-- Les démonstrations utilisant [VCV Rack](https://vcvrack.com/Rack) sont disponibles dans [VCV](./vcv)
+  Le fichier [demo/index.html](./demo/index.html) est directement exécutable dans un web browser
+
+- Les démonstrations utilisant [VCV Rack](https://vcvrack.com/Rack) sont disponibles dans le répertoire [VCV](./vcv)
 
 ## Bio : Pierre Poliakoff
 
