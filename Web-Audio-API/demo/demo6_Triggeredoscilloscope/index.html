@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo5: Triggered Oscilloscope</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <div id="my_audio_rack"></div>
+          <div class="module">
+            Audio Output
+            <button type="button" id="button_on">Sound ON</button>
+            <button type="button" id="button_off" disabled>Sound OFF</button>
+          </div>
+        </td>
+        <td>
+          <canvas class="canvas_crt" id="canvas_oscilloscope"></canvas>
+          <div>
+            trigger level
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="130"
+              class="slider"
+              id="slider_trigger_level"
+            />
+          </div>
+        </td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

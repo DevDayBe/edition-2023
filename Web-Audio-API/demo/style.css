@@ -1,0 +1,30 @@
+body {
+  background-color: lightblue;
+}
+.homepage {
+  display: grid;
+}
+.button_link {
+  border: 6px solid slategrey;
+  width: 250px;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 5px;
+  border-style: outset;
+  background-color: wheat;
+}
+.module {
+  border: solid 1px black;
+  padding: 5px;
+  margin: 2px;
+  width: 400px;
+
+  background-color: paleturquoise;
+  display: flex;
+  justify-content: space-between;
+}
+
+.canvas_crt {
+  padding: 10px;
+  background-color: black;
+}
